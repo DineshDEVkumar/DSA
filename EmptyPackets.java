@@ -21,5 +21,6 @@ public class EmptyPackets {
     }
     Zeros(arr);
     System.out.println(Arrays.toString(arr));
+    scan.close();
    }
 }
