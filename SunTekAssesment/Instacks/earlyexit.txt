@@ -1,0 +1,30 @@
+Description:
+In a world where data drives decisions, an e-commerce company constantly seeks ways to optimize its processes to enhance customer experience. One critical aspect of their operations is sorting product listings based on various criteria, such as price, ratings, or popularity. The existing sorting algorithm is bubble sort, which, while easy to implement, struggles with efficiency, especially when handling large datasets during peak shopping seasons.To address this issue, the company decides to implement an optimization strategy for bubble sort that reduces unnecessary iterations. The optimization is based on the observation that bubble sort can exit early if no swaps occur during a complete pass through the array. This indicates that the array is already sorted, allowing the algorithm to terminate early instead of continuing to iterate through the remaining elements.
+
+
+Constraints:
+● The array can contain at most 10^3 integers.
+● Each integer in the array can be in the range of 0≤price≤10^6
+
+
+Example:
+Example 1:
+
+
+Input: 5
+5 2 9 1 5
+Output: 1 2 5 5 9
+4
+
+
+Example 2:
+
+
+Input: 3
+3 4 5
+Output: 3 4 5
+1
+
+
+Explanation:
+Your task is to implement bubbleSort() function with early exit optimization in Java. The goal is to ensure that the algorithm exits as soon as the array is sorted, avoiding unnecessary iterations. You will need to track and display the number of iterations taken until the array becomes sorted to demonstrate the effectiveness of the optimization.

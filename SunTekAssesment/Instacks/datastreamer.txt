@@ -1,0 +1,21 @@
+In the high-tech city of Codetropolis, renowned scientist Dr. Seraphine designed a complex data streamer that sends critical data packets to thousands of servers worldwide. Each packet must arrive in the correct order, but a notorious hacker, known only as Cipher, has found a way to corrupt random parts of the data stream. Each packet is represented as a node in a singly linked list with a packetID (integer) and pointer to the next node (next) The corruption happens in cycles. Every k-th packet and all its subsequent packets in the next p positions are deleted every time the data stream wraps around. The deletion repeats cyclically until the entire list is traversed. After fixing the stream, Dr. Seraphine needs to optimize the remaining data by rotating the entire linked list by a given number of positions r.
+Write a function to delete every cyclically corrupted segment of packets from the linked list and then rotate the remaining nodes by r positions.
+
+Constraints:
+● The linked list may contain up to 10^6 nodes.
+● The deletion and rotation must be done in-place without using extra space.
+● The corruption may affect overlapping parts of the list.
+
+Example:
+Example 1-
+Input: 1 2 3 4 5 6 7 8 9 10
+3 2 4
+Output: 1 2 6 7
+ 
+Example 2-
+Input: 1 2 3 4 5 6 7 8 9 10
+2 1 3
+Output: 4 7 10 1
+
+Explanation:
+The task is to implement this process, performing the deletions and rotations in place, and return the final state of the linked list after these operations are completed.

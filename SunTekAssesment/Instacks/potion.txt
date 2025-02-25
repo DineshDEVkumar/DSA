@@ -1,0 +1,28 @@
+Description:
+In a magical realm, a wizard is preparing a powerful potion using various enchanted ingredients. Each ingredient's magical strength is represented as an integer in an array. To maintain the potion's balance, the wizard only permits sorting the ingredients using neighboring swaps.Sort the array of integers using only neighboring swaps, and return the sorted array.Additionally, you need to determine and return the number of neighboring swaps used to achieve the sorted order. After sorting the array, find the longest contiguous subarray where the sum of its elements is less than or equal to a given threshold. Report the length of this subarray.
+
+
+Constraints:
+● The array will have at least 1 element and at most 10,000 elements.
+
+● The array may contain duplicate elements, and all elements are non-negative integers.
+
+
+Example:
+Example 1:
+
+Input: 4 3 1 2 5 
+
+Output: [1, 2, 3, 4], 5 ,2 
+
+ 
+
+Example 2:
+
+Input: 7, 9, 5, 3 10
+
+Output: [3, 5, 7, 9], 5 ,2
+
+
+Explanation:
+The task is to sort an array of integers using the minimum number of adjacent swaps. In this problem, adjacent swaps are defined as swapping two neighboring elements in the array. The goal is not just to sort the array but to do so while minimizing the number of these swaps. To achieve this, you should implement a function that sorts the input array of integers in ascending order, and uses the least number of adjacent swaps required to achieve the sorted array. The function should be defined as public int[] sortWithAdjacentSwaps(int[] nums). The input argument nums is the array of integers that needs to be sorted.
